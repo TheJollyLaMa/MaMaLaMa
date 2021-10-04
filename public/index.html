@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="TheJollyLaMa">
+    <meta name="description" content="MEAN_Stack">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MaMaLaMa's Photography</title>
+  </head>
+  <body ng-app="ClientWebApp" ng-controller="PortfolioController">
+    <div class="row">
+      <div class="col-xs-4"><a href="#!/Portfolio" style="text-decoration:none;"><h1>Portfolio</h1></a></div>
+      <div class="col-xs-4"><a href="#!/About" style="text-decoration:none;"><h1>MaMaLaMa's Photography</h1></a></div>
+      <div class="col-xs-4"><a href="#!/Contact" style="text-decoration:none;"><h1>Contact</h1></a></div>
+    </div>
+    <div class="mainViewWindow">
+      <ng-view></ng-view>
+    </div>
+    <div class="row">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-4 youtubevid"><iframe width="auto" height="auto" src="https://www.youtube.com/embed/TQIGiefShs4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="col-xs-4"></div>
+    </div>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/ClientWebApp.js"></script>
+      <script type="text/javascript" src="js/Controllers/PortfolioController.js"></script>
+      <script type="text/javascript" src="js/Controllers/AuthController.js"></script>
+      <script type="text/javascript" src="js/Controllers/BehindTheCounterController.js"></script>
+      <script type="text/javascript" src="js/Services/AuthFactory.js"></script>
+      <script type="text/javascript" src="js/Services/InventoryFactory.js"></script>
+  </body>
+</html>
